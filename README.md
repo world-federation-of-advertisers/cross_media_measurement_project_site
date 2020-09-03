@@ -527,10 +527,17 @@ In the last step of the set-up phase, the operator of the measurement service wi
 
 ### Live Campaign Measurement Phase
 
+
+**Figure 4. Overview of live campaign measurement phase**
+
 <p align="center">
 <img src="image3.png?raw=true">
 </p>
-The second phase of the cross-media measurement is the live campaign measurement phase. This phase happens on a daily basis for the duration of each campaign. In this phase, data providers will label their campaign impression data with VIDs, and then transform the labelled impression data to private sketches  to be processed with the private reach and frequency estimator. This measurement service will then combine the private reach data from multiple data providers and supply standard reach and frequency metrics through an API(s) and/or default reports. Planning APIs will also be provided.
+
+The second phase of the cross-media measurement is the live campaign measurement phase. This phase happens on a daily basis for the duration of each campaign. 
+In this phase, data providers will label their campaign impression data with VIDs, and then transform the labelled impression data to private sketches  
+to be processed with the private reach and frequency estimator. This measurement service will then combine the private reach data from multiple data 
+providers and supply standard reach and frequency metrics through an API(s) and/or default reports. Planning APIs will also be provided.
 
 
 #### Step 4. Data Providers run Virtual ID model on campaign impression data
