@@ -281,7 +281,7 @@ Transparency is an important part of building trust in the technical solution. T
 
 A future-resilient cross-media measurement solution should consist of four key components to offer highly accurate reach and frequency measurement while still preserving consumer privacy. Those components include: (1) Panels; (2) Census Data & Identity (3) Private Reach and Frequency Estimator; and (4) System Outputs. These components meet our guiding principles and advertiser requirements per above and are described in further detail below. 
 
-[!drawing]("system_overview.png)
+![system overview](image1.png?raw=true)
 
 ### 1. Panels as source of truth
 
@@ -496,7 +496,7 @@ The system is designed to work in two phases: a set-up phase, and an ongoing mea
 
 **Figure 3. Overview of measurement system set-up phase**
 
-[!drawing]("set_up_phase.png)
+![set up phase](image2.jpg?raw=true)
 
 The main objective of the set up phase is to train a market-specific Virtual People identity model, which will provide the foundation for cross-media deduplication. This set-up process must be completed at the country/market level and refreshed a few times per year. The specific cadence of updates will depend on a number of factors, including but not limited to the country’s rate of population growth and rate of internet penetration. For example, a developed market with a relatively stable population and higher internet penetration (e.g., US, CA) may only require annual updates. On the other hand, developing countries with rapid population growth and evolving internet penetration (e.g., IN, ID) may benefit from a quarterly cadence. This should be left up to local governing bodies to decide based on relevant market factors.  
 
@@ -522,7 +522,7 @@ In the last step of the set-up phase, the operator of the measurement service wi
 
 ### Live Campaign Measurement Phase
 
-[!drawing]("live_measurement_phase.png)
+![measurement phase](image3.png?raw=true)
 
 The second phase of the cross-media measurement is the live campaign measurement phase. This phase happens on a daily basis for the duration of each campaign. In this phase, data providers will label their campaign impression data with VIDs, and then transform the labelled impression data to private sketches  to be processed with the private reach and frequency estimator. This measurement service will then combine the private reach data from multiple data providers and supply standard reach and frequency metrics through an API(s) and/or default reports. Planning APIs will also be provided.
 
