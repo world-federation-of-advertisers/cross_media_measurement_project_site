@@ -49,21 +49,25 @@
 
 ## Executive Summary                                                                        
 
-As part of the [WFA](https://wfanet.org/)’s [cross-media measurement working group](https://wfanet.org/knowledge/item/2019/10/04/Global-advertisers-launch-drive-to-establish-cross-media-measurement-principles), this document outlines an initial proposed technical blueprint that local industry bodies could implement to deliver cross-media measurement in markets around the world. This blueprint is designed to include both digital and linear channels including TV, with further input needed from measurement experts on the buy and sell side, advertisers, research vendors, agencies, and other media (e.g., TV broadcasters). The measurement technology described here:
+This document outlines an initial proposed technical blueprint that local industry bodies could implement to deliver cross-media measurement in markets around the world. This blueprint is designed to include both digital and linear channels including TV, with further input needed from measurement experts on the buy and sell side, advertisers, research vendors, agencies, and other media (e.g., TV broadcasters). The measurement technology described here:
 
 
 
 *   Lays out a common technical infrastructure that can be built at scale to support distinct measurement systems in local markets.
 *   Can support various panels, methodologies, data science models etc., to accommodate for local market preferences and needs.
-*   Works for digital and linear data inputs (*with further input and review required from industry experts).
+*   Works for digital and linear data inputs (\*with further input and review required from industry experts).
 *   Prioritizes reach and frequency use cases, with a path to outcomes measurement (e.g., Multi-Touch Attribution) over time.
-*   Focuses on meeting advertiser requirements (referred to in this document as the Advertiser “North Star”), as defined by the WFA working group.
+*   Focuses on meeting advertiser requirements (referred to in this document as the Advertiser “North Star”), as defined by the WFA.
 *   Will be accompanied by validation plans to ensure fair and accurate measurement across various media.
 
 We expect the proposed technical blueprint to be an ongoing collaboration with industry partners. As a means to provide clarification on the components, this proposal has already been subject to an industry-wide open comment and peer review exercise, organised by the WFA. This document version reflects some of the feedback from these exercises and will be updated on an ongoing basis as testing and other research is completed.
 
-Before outlining the blueprint, the technical working group would like to highlight a few key points below on: the specific advertiser use cases this system is aiming to deliver; global vs. local market considerations; system inputs and outputs; recap of international peer review process and open questions. These topics are also covered in more detail throughout the document where applicable.
+Before outlining the blueprint, it’s important to highlight a few key points below on: the specific advertiser use cases this system is aiming to deliver; global vs. local market considerations; system inputs and outputs; recap of international peer review process and open questions. These topics are also covered in more detail throughout the document where applicable.
 
+
+### WFA Cross-Media Measurement Working Group
+
+This document was developed as part of the [WFA](https://wfanet.org/)’s technical [cross-media measurement working group](https://wfanet.org/knowledge/item/2019/10/04/Global-advertisers-launch-drive-to-establish-cross-media-measurement-principles). A group composed of technical experts from digital platforms and advertisers as part of WFA’s wider cross-media measurement programme, as outlined in the _WFA Industry Framework For Establishing A New Approach To Cross-Media Measurement_. As this work proceeds, it’s intended that the composition of working groups will be evolved to suit the task and the needs of local and international stakeholders.   
 
 ### Advertiser Needs & Industry Requirements
 
@@ -140,7 +144,7 @@ The peer review was organised around deep dives into the components comprising t
 *   Design of a detailed output API that meets all key planning and reporting use cases and is validated against each local market’s requirement.
 *   Design of an end-to-end validation framework to ensure that the proposed measurement system provides high quality measurement utilities and sufficient privacy protection.
 
-Additionally, there are a series of open questions related to, but not directly pertaining to, the proposed technical blueprint, such as the technical implications for governance, that will need to be resolved by local markets in partnership with the WFA and a technical working group. National advertiser bodies should lead the implementation of the design in their local markets. Specific timing will depend on market stakeholders and requirements.
+Additionally, there are a series of open questions related to, but not directly pertaining to, the proposed technical blueprint, such as the technical implications for governance, that will need to be resolved by local markets in partnership with the WFA and technical working group. National advertiser bodies should lead the implementation of the design in their local markets. Specific timing will depend on market stakeholders and requirements.
 
 
 ## Detailed Technical Blueprint
