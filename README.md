@@ -109,7 +109,9 @@ This list is not comprehensive, and additional requirements and details are outl
 
 ### Global vs. Local Market Considerations
 
-This proposed technical blueprint outlines the technical infrastructure needed for privacy-centric deduplication of reach and frequency across media. While a cross-media solution’s implementation needs to be customized for each local market, there are both business and technical reasons to support the creation of certain common, global infrastructure. On the business side, one of the core pieces of this initiative is to enable Advertisers to operate consistently across different markets. In addition to business needs for consistency, certain technological and methodological aspects of the system need to be common to ensure a consistent approach to privacy, and to ensure economic viability (cost effectiveness) for those entities operating and participating in the system at scale. The system(s) themselves will be built and developed in each market with flexibility for addressing local needs adjustments underpinned by a global, consistent approach. This will ensure that the solution meets market-specific needs, and that advertisers have flexibility and choice.
+This proposed technical blueprint outlines the technical infrastructure needed for privacy-centric deduplication of reach and frequency across media. The system(s) themselves will be built and developed in each market with flexibility for addressing local needs, underpinned by a global, consistent approach. This will ensure that the solution meets market-specific needs, and that advertisers have flexibility and choice.
+
+While development and implementation of a cross-media system needs to be customized for each local market, there are various reasons - both business as well as technical/methodological - to support the creation of certain common, global infrastructure. First, business continuity is critical for global Advertisers. One of the core pieces of this initiative is to enable Advertisers to operate consistently across different markets. As such, some of the foundational elements of the system needs to be common in order to ensure this desired consistency.  Second, ensuring consumer privacy requires that certain technological and methodological aspects of the system need to be common to ensure a consistent approach to privacy. Third, economic viability of building such a system requires that certain technical and methodological aspects of the system be common to ensure cost effectiveness for those entities operating and participating in the system at scale.
 
 
 ### System Inputs and Outputs
@@ -192,7 +194,7 @@ Based upon the advertiser needs (“North Star”) and industry requirements the
    </td>
    <td>Data Granularity (ex. For viewability)
    </td>
-   <td>Sufficiently granular data to comply with relevant industry standards, report across all relevant metrics etc while respecting privacy principles
+   <td>Sufficiently granular data to comply with relevant industry standards, report across all relevant metrics etc while respecting privacy principles, and applicable laws and regulations
    </td>
   </tr>
   <tr>
@@ -297,7 +299,7 @@ Privacy principles have a particular bearing on technical design choices, as ens
 
 #### Consumer Privacy
 
-*   **Re-identification:** is the process by which records in an anonymized data set can be linked to specific individuals, by combining with records in another dataset”<sup>6</sup>.
+*   **Re-identification:** is the process by which records in a de-identified data set can be linked to specific individuals, by combining with records in another dataset”<sup>6</sup>.
     *   Data providers should be able to take steps to prevent their users’ from being re-identified unless data belongs to consenting panelists
     *   Why? Re-identification is a risk that many industries face today. If data is not properly protected, it can be combined with other datasets to reveal sensitive user information.
     *   In addition to strong contractual protections, data providers will also need technical guarantees against re-identification of users, through measures such as differential privacy<sup>1</sup>. All methods must provide a quantifiable measure of protection.
@@ -306,8 +308,9 @@ Privacy principles have a particular bearing on technical design choices, as ens
     *   Data providers may request explicit consent to share panelist data
     *   Data providers should not learn the identity of any panelist
     *   Panelists should have the same user controls per above
+*   **Privacy laws and regulations:** The design of this cross-media measurement system should comply with applicable global and local privacy laws and regulations. All solutions will need to be adaptable to the changing nature of privacy regulation.
 
-We will meet these principles by designing this system such that data providers’ inputs are either combined cryptographically and/or are differentially private, and that the system's outputs are compliant with privacy principles (e.g., differentially private). In short, no party to the system should be able to learn anything beyond the agreed upon outputs of the system.
+We will meet these principles by designing this system such that data providers’ inputs are either combined cryptographically and/or are differentially private, and that the system's outputs are compliant with privacy principles (e.g., differentially private). In short, no party to the system should be able to learn anything beyond the outputs of the system.
 
 #### Data Provider Data Security
 
@@ -376,7 +379,7 @@ The technical working group has identified two identification frameworks that ad
 1. Virtual People IDs (VIDs) as a way to solve this problem for reach and frequency immediately<sup>5</sup>;
 2. A cross-industry effort to explore more advanced methods like the creation of a Secure Universal Measurement ID (SUMID) that could both power metrics for sales lift and multi-touch attribution, and enhance the quality of reach and frequency measurement
 
-We believe these two approaches complement each other and recommend investing in both in parallel. However, additional work is required to determine if a SUMID can meet our requirements and principles. The technical working group therefore recommends an ongoing WFA workstream focused on relevant research to develop a SUMID over time.
+We believe these two approaches both help protect against user re-identification and complement each other, however, additional work is required to determine if a SUMID can meet our requirements and principles. The technical working group therefore recommends a future WFA workstream focused on relevant research to develop a SUMID over time. Any VID and SUMID solution will de-link the VIDs and/or SUMIDs from user data to protect against re-identification of users.
 
 
 ##### Virtual People IDs (VID)
@@ -400,7 +403,7 @@ Given the current and upcoming changes to how third-party cookies behave on brow
 
 It should also be possible to add multi-key identifiers to the system, which will improve quality and coverage over just a single identifier such as email. However, for this to be viable, the multi-key identifier has to be both secure and private, which requires significant technical work and research.
 
-The use of common identifiers for measurement also necessitates industry-wide legal and policy discussions (and consensus) that may take time to develop. On the other hand, leveraging such frameworks will enable more advertiser use cases, such as 1P audiences for reach, sales lift and multi-touch attribution. To that end, the technical working group recommends an ongoing WFA-led workstream to continue development of a privacy centric, industry accepted SUMID.
+The use of common identifiers for measurement also necessitates industry-wide legal and policy discussions (and consensus) that may take time to develop. On the other hand, leveraging such frameworks will enable more advertiser use cases, such as 1P audiences for reach, sales lift and multi-touch attribution. To that end, the technical working group recommends a future WFA-led workstream to continue development of a privacy centric, industry accepted SUMID.
 
 
 ##### Comparison of VID and SUMID
