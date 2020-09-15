@@ -177,126 +177,84 @@ Based upon the advertiser needs (“North Star”) and industry requirements the
 **Figure 1. Advertiser Use Cases & Features - Stack ranked and phased**
 
 <table>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td><strong>Requirement</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="4" ><strong>Foundational Feature Set</strong>
-   </td>
-   <td><strong>1</strong>
-   </td>
-   <td>Always-on
-   </td>
-   <td>Tagless implementation; begins from advertiser opt-in; forecasting based on available data
-   </td>
-  </tr>
-  <tr>
-   <td><strong>2</strong>
-   </td>
-   <td>Data Granularity (ex. For viewability)
-   </td>
-   <td>Sufficiently granular data to comply with relevant industry standards, report across all relevant metrics etc while respecting privacy principles, and applicable laws and regulations
-   </td>
-  </tr>
-  <tr>
-   <td><strong>3</strong>
-   </td>
-   <td>Basic Segments
-   </td>
-   <td>Creative, geo, device, placement, campaign, age, gender, format, HHI
-   </td>
-  </tr>
-  <tr>
-   <td><strong>4</strong>
-   </td>
-   <td>Output metrics
-   </td>
-   <td>Deduplicated reach, frequency, impressions, watch time (absolute, %, distribution)
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" ><strong>Phase 1:</strong>
-<p>
-<strong> Deliver R/F Use Cases</strong>
-   </td>
-   <td><strong>5</strong>
-   </td>
-   <td>R/F Reporting
-   </td>
-   <td>Reports updated at least weekly; 12 month lookback; exportable data (via API & CSV)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>6</strong>
-   </td>
-   <td>R/F Forecasting & Mgmt.
-   </td>
-   <td>12 months forecast; can be based on historical data to start (inventory data from publishers added as available); includes <strong>daily</strong> scenario planning across channels to optimize r/f (this is the mechanism to manage frequency)
-<p>
-<em>*note: freq mgmt is not a centralized targeting approach</em>
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="6" ><strong>Phase 2: </strong>
-<p>
-<strong>Deliver Outcomes Use Cases & Advanced Feature Set</strong>
-   </td>
-   <td><strong>7</strong>
-   </td>
-   <td>System integration
-   </td>
-   <td>Data API that connects to existing systems (i.e. agency tools, other tools like Datorama)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>8</strong>
-   </td>
-   <td>1P Data
-   </td>
-   <td>Custom segments based on advertiser data (reporting is top priority, forecasting secondary) - Priority 1: Reporting; Priority 2: Forecasting
-   </td>
-  </tr>
-  <tr>
-   <td><strong>9</strong>
-   </td>
-   <td>Outcomes
-   </td>
-   <td>All Effectiveness measures (brand/sales lift are top priority;  conversions, MMM,MTA secondary)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>10</strong>
-   </td>
-   <td>Segments - advanced
-   </td>
-   <td>Psychographic, behavioral audiences based on common 3P definitions
-   </td>
-  </tr>
-  <tr>
-   <td><strong>11</strong>
-   </td>
-   <td>On-demand analytics
-   </td>
-   <td>Ability to query database (considerations: data availability, latency, UI) for advanced analytics
-   </td>
-  </tr>
-  <tr>
-   <td><strong>12</strong>
-   </td>
-   <td>Global view
-   </td>
-   <td>Single UI to access multiple markets R/F reports, forecasts etc
-   </td>
-  </tr>
+<tbody>
+<tr>
+<td/>
+<td/>
+<td><strong>Requirement</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr>
+<td rowspan="4"><strong>Foundational Feature Set</strong></td>
+<td><strong>1</strong></td>
+<td>Always-on</td>
+<td>Tagless implementation; begins from advertiser opt-in; forecasting based on available data</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Data Granularity (ex. For viewability)</td>
+<td>Sufficiently granular data to comply with relevant industry standards, report across all relevant metrics etc while respecting privacy principles, and applicable laws and regulations</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Basic Segments</td>
+<td>Creative, geo, device, placement, campaign, age, gender, format, HHI</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>Output metrics</td>
+<td>Deduplicated reach, frequency, impressions, watch time (absolute, %, distribution)</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>Phase 1:</strong>
+<p><strong> Deliver R/F Use Cases</strong></p>
+</td>
+<td><strong>5</strong></td>
+<td>R/F Reporting</td>
+<td>Reports updated at least weekly; 12 month lookback; exportable data (via API &amp; CSV)</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>R/F Forecasting &amp; Mgmt.</td>
+<td>12 months forecast; can be based on historical data to start (inventory data from publishers added as available); includes <strong>daily</strong> scenario planning across channels to optimize r/f (this is the mechanism to manage frequency)
+<p><em>*note: freq mgmt is not a centralized targeting approach</em></p>
+</td>
+</tr>
+<tr>
+<td rowspan="6"><strong>Phase 2: </strong>
+<p><strong>Deliver Outcomes Use Cases &amp; Advanced Feature Set</strong></p>
+</td>
+<td><strong>7</strong></td>
+<td>System integration</td>
+<td>Data API that connects to existing systems (i.e. agency tools, other tools like Datorama)</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td>1P Data</td>
+<td>Custom segments based on advertiser data (reporting is top priority, forecasting secondary) - Priority 1: Reporting; Priority 2: Forecasting</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td>Outcomes</td>
+<td>All Effectiveness measures (brand/sales lift are top priority; conversions, MMM,MTA secondary)</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td>Segments - advanced</td>
+<td>Psychographic, behavioral audiences based on common 3P definitions</td>
+</tr>
+<tr>
+<td><strong>11</strong></td>
+<td>On-demand analytics</td>
+<td>Ability to query database (considerations: data availability, latency, UI) for advanced analytics</td>
+</tr>
+<tr>
+<td><strong>12</strong></td>
+<td>Global view</td>
+<td>Single UI to access multiple markets R/F reports, forecasts etc</td>
+</tr>
+</tbody>
 </table>
-
 
 ***Note:** Use cases and advanced features in phase 2 may be made available at different times. Development will be prioritized according to the ranking provided here by advertisers.
 
@@ -434,64 +392,46 @@ While we believe that a VID-only solution is the best way to get started, we als
 
 **Figure 2. Comparison of VID and SUMID frameworks**
 
-
 <table>
-  <tr>
-   <td><strong>Considerations</strong>
-   </td>
-   <td><strong>Secure Universal Measurement ID (SUMID)</strong>
-   </td>
-   <td><strong>Virtual People ID (VID)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Meets WFA Framework Privacy Principles
-   </td>
-   <td>TBD. Subject to additional research.
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>Produces high quality measurement outputs
-   </td>
-   <td>TBD. Subject to additional research.
-   </td>
-   <td>Yes, for R/F
-   </td>
-  </tr>
-  <tr>
-   <td>Enables key use cases
-   </td>
-   <td>R/F (improved when used with VID)
-<p>
-Sales outcomes (lift, MTA)
-<p>
-First Party Audience
-   </td>
-   <td>R/F
-<p>
-(Further research necessary to see if it can solve other metrics like MTA by itself).
-   </td>
-  </tr>
-  <tr>
-   <td>Scales (i.e. accessible to all types of data providers)
-   </td>
-   <td>No
-<p>
-(excludes data providers without 1P relationship with users)
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>Recommendation:
-   </td>
-   <td colspan="2" ><strong>Over time the system should support both VID and SUMID.</strong> In the short term, we recommend using VID to deliver reach and frequency measurement without delay, while we continue the WFA-led workstream to develop SUMID.
-   </td>
-  </tr>
+<tbody>
+<tr>
+<td><strong>Considerations</strong></td>
+<td><strong>Secure Universal Measurement ID (SUMID)</strong></td>
+<td><strong>Virtual People ID (VID)</strong></td>
+</tr>
+<tr>
+<td>Meets WFA Framework Privacy Principles</td>
+<td>TBD. Subject to additional research.</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Produces high quality measurement outputs</td>
+<td>TBD. Subject to additional research.</td>
+<td>Yes, for R/F</td>
+</tr>
+<tr>
+<td>Enables key use cases</td>
+<td>R/F (improved when used with VID)
+<p>Sales outcomes (lift, MTA)</p>
+<p>First Party Audience</p>
+</td>
+<td>R/F
+<p>(Further research necessary to see if it can solve other metrics like MTA by itself).</p>
+</td>
+</tr>
+<tr>
+<td>Scales (i.e. accessible to all types of data providers)</td>
+<td>No
+<p>(excludes data providers without 1P relationship with users)</p>
+</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Recommendation:</td>
+<td colspan="2"><strong>Over time the system should support both VID and SUMID.</strong> In the short term, we recommend using VID to deliver reach and frequency measurement without delay, while we continue the WFA-led workstream to develop SUMID.</td>
+</tr>
+</tbody>
 </table>
-
 
 
 ### 3. Private Reach and Frequency Estimation
