@@ -1,5 +1,8 @@
 # Cross-Media Measurement System for Reach and Frequency
 
+You can also read this from our [Downloadable PDF](https://github.com/world-federation-of-advertisers/cross_media_measurement_project_site/raw/master/cross_media_measurement_system_for_reach_and_frequency.pdf)
+
+
 ## Table of Contents
 - [**Executive Summary**](#executive-summary)
     - [**WFA Cross-Media Measurement Working Group**](#wfa-cross-media-measurement-working-group)
