@@ -3,7 +3,6 @@
 # Private Reach & Frequency Estimators Evaluation Results
 
 <br>
-
 <table align="center">
   <tr>
    <td align="center"><strong>Craig Wright</strong>
