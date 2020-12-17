@@ -26,10 +26,10 @@
 
 <br>
 
-<center>
-  Additional contributors to evaluation code base and design in Appendix G
-</center>
-
+<p align="center">
+  <i> Additional contributors to evaluation code base and design in </i>
+  <i><a href="#appendix-h-contributors">Appendix H</a></i>
+</p>
 
 <br>
 
@@ -131,7 +131,7 @@ The second group of estimators are private sketches that are not based on the Bl
 
 The final method considered is really a meta-technique called **stratified sketch**. Stratified sketches are composed of multiple atomic sketches, one per frequency. The sketches that compose it can be of any type as long as they support a union, intersection, and difference operation. This technique was developed specifically for frequency estimation where the underlying sketch could not support the estimation of frequency directly.
 
-For the detailed parameterizations that were used for each estimator, please refer to the table in Appendix A. The abbreviations listed in that table are used in the results tables in subsequent sections.
+For the detailed parameterizations that were used for each estimator, please refer to the table in [Appendix A](#appendix-a-detailed-parameterization-of-the-sketch-and-estimator-candidates). The abbreviations listed in that table are used in the results tables in subsequent sections.
 
 <br>
 
@@ -299,7 +299,7 @@ These results are consistent with the theory for both HLLs and Bloom filters, wh
 
 The other methods do not perform as well and are impacted by the input data distribution. One of these is the simple conditional independence estimator, which as might be expected, does well when independence actually exists, but fares rather poorly otherwise.
 
-Vector of Counts does much better than the simple conditional independence estimator, but it can exhibit significant bias when input sets are correlated (see Appendix B). Moreover, it is unable to estimate reach across more than 20 publishers at our 95/5 accuracy threshold in all but one scenario.
+Vector of Counts does much better than the simple conditional independence estimator, but it can exhibit significant bias when input sets are correlated (see [Appendix B](#appendix-b-example-plots-showing-voc-has-bias-when-the-sets-have-non-homogeneous-correlation)). Moreover, it is unable to estimate reach across more than 20 publishers at our 95/5 accuracy threshold in all but one scenario.
 
 Meta VoC does reasonably well when constructed using a uniform Bloom filter, but fares poorly when constructed using an exponential Bloom filter. The reason for this is that the VoC merge operation shows bias under correlation and we see a high degree of correlation between the active register sets in exponential Bloom filters. Such correlations do not occur for uniform Bloom filters except where the underlying data set exhibits correlation. Regardless, standard VoC outperforms all flavors of Meta VoC.
 
@@ -632,7 +632,7 @@ In the case of frequency we considered three candidates. The first was the Liqui
 
 The second method considered was a stratified sketch of Vector of Counts. It allows for at least pairwise estimation of frequency for both values of max frequency, but as with reach, its accuracy is sensitive to the input distribution.
 
-The last method, which was not exhaustively simulated, was a stratified sketch of exponential Bloom filters. We chose exponential Bloom filters because for reach they had results that were as good or better than any other Bloom filter distribution. Unfortunately due to bias in the intersection operation they perform very poorly (see Appendix C). This was determined after just a few simulations and due to these early results we did not see any practical value in generating a full set of results. Cells that are colored green allow for 10+ sets, cells colored yellow allow for 6-9 sets, and red cells allow for less than 6.
+The last method, which was not exhaustively simulated, was a stratified sketch of exponential Bloom filters. We chose exponential Bloom filters because for reach they had results that were as good or better than any other Bloom filter distribution. Unfortunately due to bias in the intersection operation they perform very poorly (see [Appendix C](#appendix-c-adbf-sketch-intersection-operation-bias)). This was determined after just a few simulations and due to these early results we did not see any practical value in generating a full set of results. Cells that are colored green allow for 10+ sets, cells colored yellow allow for 6-9 sets, and red cells allow for less than 6.
 
 <br>
 
@@ -742,7 +742,7 @@ Under the local privacy theme we considered the following reach estimators.
 
 In this theme we considered two performance criteria 95/5 and 95/10. The reason for this is that at 95/5 the performance of all methods was poor and we simply wanted to understand how they behaved under a relaxed quality regime. Tables for both quality regimes are included.
 
-Bloom filter variants perform similarly across both quality criteria, however we note that the choice of decay rate becomes much more important in the local theme. An important factor that impacts Bloom filter accuracy in this theme is the size of the Bloom filter with respect to the size of the set being measured. That is, given a Bloom filter of constant size, the accuracy after adding noise will be dependent upon the size of the set being estimated. If we recall that only Bloom filters of the same size can be unioned then a serious practical consequence is that unioning noisy Bloom filters whose input sets differ substantially in size is problematic. Specifically, unioning smaller sets to one another will cause the noise to grow faster (see Appendix F). In short, this property violates our desire to have the cross media measurement technology work equally well for impression data providers of all sizes.
+Bloom filter variants perform similarly across both quality criteria, however we note that the choice of decay rate becomes much more important in the local theme. An important factor that impacts Bloom filter accuracy in this theme is the size of the Bloom filter with respect to the size of the set being measured. That is, given a Bloom filter of constant size, the accuracy after adding noise will be dependent upon the size of the set being estimated. If we recall that only Bloom filters of the same size can be unioned then a serious practical consequence is that unioning noisy Bloom filters whose input sets differ substantially in size is problematic. Specifically, unioning smaller sets to one another will cause the noise to grow faster (see [Appendix F](#appendix-f-bloom-filters-sensitive-to-input-set-size)). In short, this property violates our desire to have the cross media measurement technology work equally well for impression data providers of all sizes.
 
 Conditional independence works well when there is actual independence and rather poorly otherwise. It is not a serious contender in this theme.
 
@@ -1573,7 +1573,7 @@ The following frequency estimators were considered.
 *   Stratified sketch of Vector of Counts No Clip
 *   Stratified sketch of Vector of Counts With Clip
 
-Due to their extremely poor performance in the no privacy theme, we chose to omit stratified sketches of Bloom filters here. That left us with two variants of Vector of Counts. The Stratified VoC with clipping is far more stable than that without clipping at the tail frequency levels, (see Appendix D), and this led us to generate the full set of results only for the clipped VoC. The following table shows the results.
+Due to their extremely poor performance in the no privacy theme, we chose to omit stratified sketches of Bloom filters here. That left us with two variants of Vector of Counts. The Stratified VoC with clipping is far more stable than that without clipping at the tail frequency levels, (see [Appendix D](#appendix-d-stratified-voc-with-clipping-vs-without-clipping)), and this led us to generate the full set of results only for the clipped VoC. The following table shows the results.
 
 <br>
 
