@@ -4,6 +4,36 @@
 
 <br>
 
+<table align="center">
+  <tr>
+   <td align="center"><strong>Craig Wright</strong>
+   </td>
+   <td align="center"><strong>Aaron An</strong>
+   </td>
+   <td align="center"><strong>Xichen Huang</strong>
+   </td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+   <td align="center">Google, LLC
+   </td>
+   <td align="center">Facebook Inc.
+   </td>
+   <td align="center">Google, LLC
+   </td>
+  </tr>
+</table>
+
+<br>
+
+<center>
+  Additional contributors to evaluation code base and design in Appendix G
+</center>
+
+
+<br>
+
 ## Table of Contents
 - [**Executive Summary**](#executive-summary)
 - [**Introduction**](#introduction)
@@ -32,6 +62,8 @@
     - [Appendix D: Stratified VoC with clipping vs without clipping](#appendix-d-stratified-voc-with-clipping-vs-without-clipping)
     - [Appendix E: Boxplots of number of sets vs relative error.](#appendix-e-boxplots-of-number-of-sets-vs-relative-error)
     - [Appendix F: Bloom filters sensitive to input set size](#appendix-f-bloom-filters-sensitive-to-input-set-size)
+    - [Appendix G: Some Thoughts on Privacy Budgets](#appendix-g-some-thoughts-on-privacy-budgets)
+    - [Appendix H: Contributors](#appendix-h-contributors)
 
 <br>
 
@@ -2214,3 +2246,29 @@ Finally it needs to be determined to whom the privacy budget applies. Should eac
 Following this logic, the privacy budget must be split across campaigns for a single advertiser. Note that this consideration makes the local methods completely infeasible and draws some concern to the global methods, which as investigated, can probably only support about 1000 queries per day per advertiser. The good news is that existing research points to a way to allow about 100,000 queries per advertiser per day, which should be sufficient.
 
 Additional research and discussion is required to determine exactly how privacy budgets will be defined and managed.
+
+<br>
+
+### Appendix H: Contributors
+
+#### MRC
+* Ron Pinelli Jr
+
+#### Facebook Inc.
+* Aaron An
+* Miao Yu
+* Zeke Huang
+* Sanjay Saravanan
+* Isabella Ni
+
+#### Google LLC
+* Craig Wright
+* Xichen Huang
+* Sheng Ma
+* Jiayu Peng
+* Matthew Clegg
+* Joey Knightbrook
+* Ugur Akyol
+* Evgeny Skvortsov
+* Raimundo Mirisola
+* Preston Lee
