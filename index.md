@@ -1,7 +1,3 @@
----
-mermaid: true
----
-
 # Overview
 
 The Halo CMM system for Reach and Frequency measurement is an open source implementation of
